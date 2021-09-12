@@ -65,7 +65,7 @@ if(pattern.test(message.message)){
 }
 });
 
-    var filtreler = await FilterDb.getFilter(message.jid)
+    var filtreler = await FilterDb.getFilter(message.jid);
     if (!filtreler) return; 
     filtreler.map(
         async (filter) => {
